@@ -1,0 +1,12 @@
+x,y,tb=map(int, input().split(" "))
+t=0
+if tb>=x:
+    t+=1
+    tb=tb-x
+    if tb>=y:
+        t+=1
+        print(t)
+    else:
+        print(t)
+elif tb<x:
+    print(t)
